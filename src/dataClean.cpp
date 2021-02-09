@@ -7,7 +7,7 @@
 #include <regex>
 using namespace std;
 
-void fileCleaner(string &str);
+void fileCleaner(string &str, map<string, int>&);
 
 
 int main(){
@@ -24,7 +24,7 @@ int main(){
 
   while(getline(file_csv,read_csv)){ // print lines from csv files
     cout << read_csv << endl;
-    fileCleaner(read_csv);
+    fileCleaner(read_csv, word_count);
   }
 
 
@@ -37,7 +37,7 @@ int main(){
 }
 
 // Function that changes all characters to upper case (to avoid checking for it) and removes all symbols
-void fileCleaner(string &str) {
+void fileCleaner(string &str, map<string, int>& words) {
 
   //1. Looping through and changing each individual character to upper case.
   for (int x = 0; x < str.length(); x++) {
@@ -46,7 +46,7 @@ void fileCleaner(string &str) {
 
   //2. Using regular expressions (C++11) to remove all symbols and non-letters.
   regex reg{"([A-Z]+)"}; //This regex will search for all upper case letters and omit all symbols.
-  smatch{match}; // This will store the result of the regex.
+  smatch match; // This will store the result of the regex.
   sregex_iterator currentMatch{ str.begin(), str.end(), reg }; //This iterator helps to find all instances of the regex, instead of just one.
   sregex_iterator lastMatch;
   while (currentMatch != lastMatch) {
