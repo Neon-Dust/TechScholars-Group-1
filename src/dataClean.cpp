@@ -11,7 +11,8 @@ void fileCleaner(string &str, map<string, int>&);
 
 
 int main(){
-  map<string,int> word_count;
+  map<string,int> word_map;
+  map<string, int> stopwords_map;
   string read_csv, read_stopwords; // string var for reading csv file and reading stopwords file
   ofstream cleaned_words; // creates write object for cleaned words file
   ifstream file_csv, stop_words; // creates read object for csv file and stopwords file
@@ -24,16 +25,30 @@ int main(){
 
 
 while(getline(file_csv,read_csv)){ // print lines from csv files
-    fileCleaner(read_csv, word_count);
+    fileCleaner(read_csv, word_map);
   }
 
-  for (const auto& x : word_count){
+  for (const auto& x : word_map){
     cout << x.first << ": " << x.second << "\n";
    }
 
 
   while(getline(stop_words,read_stopwords)){ // print lines from csv files
-    //cout << read_stopwords << endl;
+    //sample_map.insert(pair<int, string>(1, "one"));
+    for(int i = 0; i < read_stopwords.length(); i++) {
+      read_stopwords[i] = toupper(read_stopwords[i]);
+    }
+    //stopwords_map.insert(pair<string,int>(read_stopwords, 0));
+    stopwords_map[read_stopwords] = 0;
+    //++stopwords_map[read_stopwords];
+  }
+
+  //for (map<string,int>::iterator iter;iter!=stopwords_map.end();iter++){
+     //cout << (*iter).first << ": " << (*iter).second << "\n";
+  //}
+
+  for (const auto& x : stopwords_map){
+    cout << x.second << ": " << x.first << "\n";
   }
 
   file_csv.close();
@@ -51,13 +66,12 @@ void fileCleaner(string &str, map<string, int>& words) {
   }
 
   //2. Using regular expressions (C++11) to remove all symbols and non-letters.
-  regex reg{"([a-zA-Z]+)"}; //This regex will search for all upper case letters and omit all symbols.
+  regex reg{"([A-Z]+)"}; //This regex will search for all upper case letters and omit all symbols.
   smatch match; // This will store the result of the regex.
   sregex_iterator currentMatch{ str.begin(), str.end(), reg }; //This iterator helps to find all instances of the regex, instead of just one.
   sregex_iterator lastMatch;
   while (currentMatch != lastMatch) {
     match = *currentMatch;
-    cout << match.str() << endl;
     ++words[match.str()];
     currentMatch++;
   }
