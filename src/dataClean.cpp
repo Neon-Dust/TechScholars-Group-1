@@ -22,7 +22,11 @@ int main(){
   stop_words.open("/Users/ahmedalnoor/Documents/TechScholars/TechScholars-Group-1/src/stopwords_en_minus_c_r.txt"); // take in csv file
 
 
+<<<<<<< HEAD
   while(getline(file_csv,read_csv)){ // print lines from csv files
+=======
+  while(getline(file_csv,read_csv)) { // print lines from csv files
+>>>>>>> 734329c2941a85615a03e47f5dcbd99462db591d
     fileCleaner(read_csv, word_count);
 
   }
@@ -32,9 +36,16 @@ int main(){
    }
 
 
+<<<<<<< HEAD
   while(getline(file_csv,read_stopwords)){ // print lines from csv files
+=======
+  while(getline(stop_words,read_stopwords)){ // print lines from csv files
+    cout << read_stopwords << endl;
+>>>>>>> 734329c2941a85615a03e47f5dcbd99462db591d
   }
 
+  file_csv.close();
+  stop_words.close();
   return 0;
 
 }
