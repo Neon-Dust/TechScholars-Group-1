@@ -22,16 +22,17 @@ int main(){
   stop_words.open("/Users/ahmedalnoor/Documents/TechScholars/TechScholars-Group-1/src/stopwords_en_minus_c_r.txt"); // take in csv file
 
 
-  while(getline(file_csv,read_csv)){ // print lines from csv files
-    cout << read_csv << endl;
+  while(getline(file_csv,read_csv)) { // print lines from csv files
     fileCleaner(read_csv, word_count);
   }
 
 
-  while(getline(file_csv,read_stopwords)){ // print lines from csv files
+  while(getline(stop_words,read_stopwords)){ // print lines from csv files
     cout << read_stopwords << endl;
   }
 
+  file_csv.close();
+  stop_words.close();
   return 0;
 
 }
