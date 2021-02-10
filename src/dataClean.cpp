@@ -23,13 +23,16 @@ int main(){
 
 
   while(getline(file_csv,read_csv)){ // print lines from csv files
-    cout << read_csv << endl;
     fileCleaner(read_csv, word_count);
+
   }
+
+  for (const auto& x : word_count) {
+    cout << x.first << ": " << x.second << "\n";
+   }
 
 
   while(getline(file_csv,read_stopwords)){ // print lines from csv files
-    cout << read_stopwords << endl;
   }
 
   return 0;
@@ -45,7 +48,7 @@ void fileCleaner(string &str, map<string, int>& words) {
   }
 
   //2. Using regular expressions (C++11) to remove all symbols and non-letters.
-  regex reg{"([A-Z]+)"}; //This regex will search for all upper case letters and omit all symbols.
+  regex reg{"([a-zA-Z]+)"}; //This regex will search for all upper case letters and omit all symbols.
   smatch match; // This will store the result of the regex.
   sregex_iterator currentMatch{ str.begin(), str.end(), reg }; //This iterator helps to find all instances of the regex, instead of just one.
   sregex_iterator lastMatch;
