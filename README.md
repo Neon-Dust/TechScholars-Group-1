@@ -1,10 +1,6 @@
 # TechScholars Group 1
 
 
-
-
-
-
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
@@ -28,8 +24,9 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a>Getting Started</a>
       <ul>
+        <li><a href="#todo">TODO</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
@@ -47,6 +44,14 @@
 Sean Cedano
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
+# Todo
+- [ ] Clean Code
+- [ ] Powerpoint
+- [ ] Update readme file with group information
+- [ ] Allow the user to specifically indicate what words they would like to filter out
+
+
 # Prerequisites
 C++ 11
 Windows 10
