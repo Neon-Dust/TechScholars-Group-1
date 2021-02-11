@@ -9,8 +9,6 @@
 
 using namespace std;
 
-
-
 // global variables
 string appendto; // stream string buffer; use to append data after cleaning the file
 vector<std::string> filter {}; // vector, dynamic array
