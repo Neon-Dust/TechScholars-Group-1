@@ -24,7 +24,9 @@
       </ul>
     </li>
     <li>
-
+      <a>Getting Started</a>
+      <ul>
+        <li><a href="#todo">TODO</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
@@ -43,6 +45,17 @@ Sean Cedano
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+# Todo
+- [ ] Clean Code
+- [ ] Powerpoint
+- [ ] Update readme file with group information
+- [ ] Allow the user to specifically indicate what words they would like to filter out
+
+
+# Prerequisites
+C++ 11
+
+Windows 10
 
 Excel or any data manipulation software
 # Installation
@@ -53,3 +66,6 @@ This program is not limited to the use of job.csv since you can change the delim
 # Usage
 
 
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/sean-cedano
+[product-screenshot]: images/screenshot.png
