@@ -24,9 +24,7 @@
       </ul>
     </li>
     <li>
-      <a>Getting Started</a>
-      <ul>
-        <li><a href="#todo">TODO</a></li>
+
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
@@ -45,16 +43,7 @@ Sean Cedano
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# Todo
-- [ ] Clean Code
-- [ ] Powerpoint
-- [ ] Update readme file with group information
-- [ ] Allow the user to specifically indicate what words they would like to filter out
 
-
-# Prerequisites
-C++ 11
-Windows 10
 Excel or any data manipulation software
 # Installation
 Clone the repo (secondBranch)
@@ -63,18 +52,4 @@ This program is not limited to the use of job.csv since you can change the delim
 
 # Usage
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/sean-cedano
-[product-screenshot]: images/screenshot.png
+
