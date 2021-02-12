@@ -1,5 +1,6 @@
 # TechScholars Group 1
 
+
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
@@ -23,8 +24,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
+
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
@@ -43,11 +43,6 @@ Sean Cedano
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-(Add your name here)
-# Prerequisites
-C++ 11
-
-Windows 10
 
 Excel or any data manipulation software
 # Installation
@@ -57,5 +52,4 @@ This program is not limited to the use of job.csv since you can change the delim
 
 # Usage
 
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/sean-cedano
+
