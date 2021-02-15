@@ -43,7 +43,9 @@ void filterWords(map<string, int>& word_map) {
         auto isFound = word_map.find(read);
         if (isFound != word_map.end()) word_map.erase(read);
     }
+    relWords.close();
 }
+
 
 void fileCleaner(string& str, map<string, int>& words) {
 
@@ -85,6 +87,16 @@ void sortAndPrint(map<string, int> wordSort) {
 
     // output sorted file into csv file
     for (int i{ 0 }; i < vectorIndex.size(); i++) {
+      if(vectorIndex[i].second <=3){
+        continue;
+      }
+      else{
         outfile << vectorIndex[i].first << "," << vectorIndex[i].second << endl;
+      }
     }
+
+
+
+
+    outfile.close();
 }
