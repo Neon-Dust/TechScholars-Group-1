@@ -20,7 +20,7 @@ int main() {
     ifstream file_csv; // Our input file stream object for jobs.csv file
     map<string, int> word_map; // our map that will store the words
     string read_csv;           // string that will store jobs.csv strings line by line
-    file_csv.open("jobs.csv");
+    file_csv.open("/home/ahmedalnoor/Ts/TechScholars-Group-1/src/jobs.csv");
 
     while (getline(file_csv, read_csv)) { fileCleaner(read_csv, word_map); }
     filterWords(word_map);
